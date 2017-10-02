@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Islamic Terrorists/Multi-Millionaire Real Estate Investors",
+    "description": "A chrome extension that replaces all instances of 'Islamic Terrorists' with 'Multi-Millionaire Real Estate Investors'",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
